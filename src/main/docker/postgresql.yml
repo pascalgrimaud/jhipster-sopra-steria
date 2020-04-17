@@ -1,0 +1,11 @@
+version: '2'
+services:
+  soprasteria-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/SopraSteria/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=SopraSteria
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
