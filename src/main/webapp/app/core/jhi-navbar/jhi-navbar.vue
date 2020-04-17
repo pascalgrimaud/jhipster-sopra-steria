@@ -1,5 +1,5 @@
 <template>
-    <b-navbar toggleable="md" type="dark" class="bg-primary">
+    <b-navbar toggleable="md" type="dark" class="bg-dark">
         <div class="jh-logo-container float-left">
             <b-navbar-toggle right class="jh-navbar-toggler d-lg-none float-right" href="javascript:void(0);"  data-toggle="collapse" target="header-tabs" aria-expanded="false" aria-label="Toggle navigation">
                 <font-awesome-icon icon="bars" />
@@ -25,6 +25,18 @@
                         <font-awesome-icon icon="th-list" />
                         <span v-text="$t('global.menu.entities.main')">Entities</span>
                     </span>
+                    <b-dropdown-item to="/project">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.project')">Project</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/label">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.label')">Label</span>
+                    </b-dropdown-item>
+                    <b-dropdown-item to="/ticket">
+                        <font-awesome-icon icon="asterisk" />
+                        <span v-text="$t('global.menu.entities.ticket')">Ticket</span>
+                    </b-dropdown-item>
                     <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
                 </b-nav-item-dropdown>
                 <b-nav-item-dropdown

@@ -29,6 +29,9 @@ import ConfigurationService from '@/admin/configuration/configuration.service';
 
 /* tslint:disable */
 
+import ProjectService from '@/entities/project/project.service';
+import LabelService from '@/entities/label/label.service';
+import TicketService from '@/entities/ticket/ticket.service';
 // jhipster-needle-add-entity-service-to-main-import - JHipster will import entities services here
 
 /* tslint:enable */
@@ -91,6 +94,9 @@ new Vue({
     metricsService: () => new MetricsService(),
     alertService: () => alertService,
     translationService: () => translationService,
+    projectService: () => new ProjectService(),
+    labelService: () => new LabelService(),
+    ticketService: () => new TicketService(),
     // jhipster-needle-add-entity-service-to-main - JHipster will import entities services here
     accountService: () => accountService
   },
